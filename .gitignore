@@ -1,1 +1,57 @@
-/.env
+# Виртуальные окружения
+venv/
+env/
+.venv/
+__pycache__/
+*.pyc
+
+# Переменные окружения
+.env
+.env.local
+.env.development
+.env.test
+.env.production
+
+# Логи и кэш
+logs/
+*.log
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+
+# IDE и редакторы
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Docker
+.dockerignore
+compose.yaml
+compose.yml
+docker-compose.yaml
+docker-compose.yml
+
+# FastAPI / Python (если используешь)
+*.db
+.sqlite3
+local-dev.db
+
+# PyCharm
+*.iml
+*.ipr
+*.iws
+out/
+build/
+
+# Jupyter
+.ipynb_checkpoints
+
+# Build
+dist/
+build/
+*.egg-info/
+*.whl
