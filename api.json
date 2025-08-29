@@ -1,0 +1,21 @@
+{
+    "ollama": {
+        "base_url": "http://localhost:11434/v1",
+        "requires_api_key": false
+    },
+    "openrouter": {
+        "base_url": "https://openrouter.ai/api/v1",
+        "requires_api_key": true,
+        "api_key_env_var": "OPENROUTER_API_KEY"
+    },
+    "openai": {
+        "base_url": "https://api.openai.com/v1",
+        "requires_api_key": true,
+        "api_key_env_var": "OPENAI_API_KEY"
+    },
+    "gemini": {
+        "base_url": "https://generativelanguage.googleapis.com/v1beta/openai/",
+        "requires_api_key": true,
+        "api_key_env_var": "GEMINI_API_KEY"
+    }
+}
