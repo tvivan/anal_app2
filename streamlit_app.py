@@ -1,4 +1,3 @@
-# streamlit_app.py
 import os
 import uuid
 import tempfile
@@ -6,17 +5,14 @@ import json
 import pandas as pd
 import streamlit as st
 from dotenv import load_dotenv
-
-# --- Импорты из нашего проекта ---
 from functions.memory import MemoryManager
 from functions import df_code_analys, api_integration, prompts
 from endpoints.endpoints import PandasCode
 
-# --- Начальная настройка страницы ---
 st.set_page_config(layout="wide", page_title="Chat with CSV")
 load_dotenv()
 
-# --- Вспомогательные функции ---
+
 @st.cache_data
 def load_providers():
     """Загружает список провайдеров из api.json."""
@@ -30,7 +26,6 @@ def load_providers():
 providers_config = load_providers()
 provider_names = list(providers_config.keys())
 
-# --- Управление состоянием сессии (Session State) ---
 # Инициализация состояния приложения
 if "services_initialized" not in st.session_state:
     st.session_state.services_initialized = False
@@ -41,7 +36,6 @@ if "services_initialized" not in st.session_state:
     st.session_state.current_df = None
     st.session_state.last_result = None
 
-# --- Отрисовка интерфейса ---
 
 # 1. Левая колонка (сайдбар) для настроек и загрузки файла
 with st.sidebar:
