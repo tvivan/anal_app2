@@ -49,7 +49,7 @@
 
 1.  **Клонируйте репозиторий:**
     ```bash
-    git clone <https://github.com/tvivan/Chat-with-your-CSV>
+    git clone https://github.com/tvivan/Chat-with-your-CSV
     cd tvivan-Chat-with-your-CSV
     ```
 2.  **Создайте и активируйте виртуальное окружение:**
